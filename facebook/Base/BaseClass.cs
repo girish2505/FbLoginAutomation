@@ -17,11 +17,11 @@ namespace facebook.Base
             driver.Url = "https://www.facebook.com/";
         }
 
-        [TearDown]
-        public void TearDown()
-        {
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(500);
-            driver.Quit();
-        }
+        //[TearDown]
+        //public void TearDown()
+        //{
+        //    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(500);
+        //    driver.Quit();
+        //}
     }
 }

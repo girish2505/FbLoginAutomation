@@ -1,4 +1,7 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using SeleniumExtras.PageObjects;
 
 namespace facebook
 {
@@ -9,6 +12,11 @@ namespace facebook
         {
             DoAction.DoAction.AssertTitle(driver);
             DoAction.DoAction.Login(driver);
+        }
+        [Test]
+        public void CreatingNewAcc()
+        {
+            SignUp.CreateNewAccount.Registration(driver);
         }
     }
 }
